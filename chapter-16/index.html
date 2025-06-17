@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SIZING UNITS</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    html{
+        font-size: 12px;
+    }
+    .box{
+        border: 2px solid black;
+       /* width: 2048px;*/
+        background-color: aquamarine;
+        box-sizing: border-box;
+        width: 100vw;/*depends on device view*/
+        margin:  auto;
+        height: 10vh;
+    }
+    .container{
+        border: 2px solid black;
+       /* width: 2048px;*/
+        background-color: aquamarine;
+        box-sizing: border-box;
+        margin: 23px auto;
+        min-height: 80vh;
+        /*font-size: 18px;*/
+        width: 100vw;/*depends on device view*/
+    }
+    .container > div{
+        font-size: 2em;
+        width:50%;
+        border: 2px solid rgb(143, 37, 37);
+
+    }
+    .container > div > div{
+        font-size: 2em;
+        width:50%; /*50% of its parent*/
+        border: 2px solid rgb(53, 37, 143);
+    }
+    .mycont{
+        box-sizing: border-box;
+        background-color: chartreuse;
+        color: darkorange;
+        font-size: 22px;
+        width:80vw;
+        margin: 23px auto;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="box">This is a Box</div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis inventore temporibus voluptatem quidem, sapiente officia deserunt quis voluptate aliquam exercitationem ipsa, voluptates libero error nihil cupiditate atque sed eaque vero consequuntur voluptatum velit harum. Doloribus praesentium provident, similique dolore, eveniet corporis deleniti quaerat nihil minima cumque, modi est ipsam reiciendis. Nihil qui maxime sequi nesciunt at assumenda. Vel a delectus architecto ad accusamus illum sint, provident voluptatibus. Dolore asperiores repellat accusamus perspiciatis possimus harum dolores dicta blanditiis assumenda?dolores blanditiis aut amet excepturi laborum est doloribus saepe possimus accusantium eius quam dicta at mollitia, sit inventore? Iusto maiores beatae atque perspiciatis dolores quo unde vitae tempore mollitia minus assumenda, numquam consequatur nihil sapiente quasi 
+
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem saepe, doloremque voluptate excepturi, non molestias necessitatibus voluptas in explicabo eius error ullam?</div>
+        </div>
+        Lorem,
+         ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis quo placeat iure, debitis illum recusandae atque est iste sunt quos sed rerum velit corporis suscipit error maiores, ea repellendus, aut optio eos. Eius nulla distinctio nobis? Vero, ipsa pariatur ad, fuga dolore nemo culpa, saepe illum officiis consectetur dicta. Velit, nesciunt id numquam nisi ipsa praesentium, quibusdam, natus excepturi labore quas distinctio temporibus. Aliquam cumque accusantium doloribus consectetur fugiat porro quaerat sapiente doloremque eos, vitae debitis excepturi voluptatem, recusandae maxime! Porro, quas! Corrupti fugiat perspiciatis iusto. Inventore perspiciatis commodi ex ut quos, quia sed non sunt nesciunt tempore adipisci tenetur magni voluptate. Quidem ad corporis ut, reprehenderit exercitationem officiis molestias voluptas dolor non aliquam natus possimus, nesciunt doloremque, animi saepe voluptatibus? Placeat, hic.
+    </div>
+
+    <div class="mycont">
+        i am another container
+    </div>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+     div{
+        color: brown;
+     }
+     /*class swlector*/
+     .brown{
+        background-color: aqua;
+     }
+     /*id selector*/
+     #green{
+        background-color: purple;
+     }
+     /*child selector*/
+     div > p{
+       color: blue;
+       background-color: yellow;
+     }
+    /* dexcendent selector*/
+    div p{
+       color: blue;
+       background-color: rgb(0, 255, 13);
+     }
+
+     /*universal selector*/
+     *{
+        margin: 0%;
+        padding: 0%;
+     }
+/*pseudo selector*/
+a:visited{
+    color: yellow;
+}
+
+a:link{
+    color: green;
+}
+
+a:active{
+    background-color: brown;
+}
+a:hover{
+    background-color: blue;
+}
+
+p:first-child{
+    background-color: rgb(196, 227, 255);
+}
+
+    </style>
+    <main class="one">
+        <p>i am first</p>
+        <p>i am second</p>
+    </main>
+
+    <div>i am a div</div>
+
+    <div class="brown">
+        i am another div
+    </div>
+
+    <div id="green">
+        i am a  nice girl
+    </div>
+
+    <div>
+        <p>
+            helllo  everyone
+        </p>
+    </div>
+
+    <div>
+        <article>
+            <p> disco dancer</p>
+            
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Go to google</a>
+    
+</body>
+
+</html>
